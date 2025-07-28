@@ -33,4 +33,10 @@ pip install requests beautifulsoup4 lxml
   - Address
   - Materials Accepted
 
+## Challenges Faced
+- **Dynamic Pagination URLs:** While handling pagination, it was necessary to update the URL dynamically for each page. This required analyzing the HTML structure to identify patterns in the tags and generate the correct URLs for each block of results.
+- **Cleaning Business Names:** Some business names contained unwanted strings or suffixes. Regular expressions and string operations were used to clean and extract the relevant business name.
+- **Joining Material Accepted Entries:** Material_accepted is saved as a semicolon-separated string in the CSV since it's a list.
+
+
 
